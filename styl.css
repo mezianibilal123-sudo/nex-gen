@@ -1,0 +1,335 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header { 
+    position: fixed;
+    width: 90%;
+    height: 60px;
+    top: 20px;
+    margin-left: 70px;
+    background-color: rgb(124, 124, 231);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 1000;
+}
+header h2 {
+    background: linear-gradient(to left, purple, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+nav ul li {
+    list-style-type: none;
+    margin: 0 10px;
+    font-family: cursive;
+    font-size: 18px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: purple;
+    transition: all 0.3s ease;
+}
+.but a {
+    text-decoration: none;
+    background-color: purple;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover {
+    color: rgb(201, 160, 225);
+}
+.but :hover {
+    background-color: rgb(201, 160, 225);
+}
+     
+
+.accu {                        /* Style for accueil area */
+    width: 100%;
+    height: 700px;
+    background-color: ivory;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo {                            /* Style for the photo container */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.photo img {
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+.sent {                            /* Style for the sentence container */
+    position: relative;
+    right: 200px;
+    width: 300%;
+}
+.sent h1 {
+    font-family: cursive;
+    font-size: 40px;
+    color: rgb(116, 78, 132);
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(201, 160, 225);
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+.sent p {
+    font-family: cursive;
+    font-size: 24px;
+    color: rgb(59, 1, 59);
+    text-align: center;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.abou {                             /* Style for about area */
+    
+    width: 100%;
+    height: 800px;
+    background-color: ivory;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abou img {                          /* Style for the image in about section */
+    width: 90%;
+    height: 80%;
+    opacity: 0.6;
+    border-radius: 20px;
+}
+.about-content {                    /* Style for the content in about section */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 500px;
+}
+#hh2 {
+    font-family: cursive;
+    font-size: 30px;
+    color: rgb(116, 78, 132);
+    text-decoration: underline rgba(40, 12, 79, 0.103) 8px ;
+    margin-bottom: 70px;
+}
+#about-text {
+    font-family: cursive;
+    font-size: 24px;
+    color: rgb(40, 9, 19);
+    text-align: center;
+   
+}
+
+
+.form {                                         /* styl for formation erea */
+    width: 100%;
+    height: auto;
+    background-color: ivory;
+}
+.form-content {                                 /* Style for the content container in formation area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.form-item {                                      /*Style for the the content*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 3px solid rgb(167, 22, 167);
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+.form-item img {
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.form-content h2 {
+    font-family: cursive;
+    font-size: 28px;
+    color: rgb(73, 30, 92);
+}
+.form-item h3 {
+    font-family: cursive;
+    font-size: 24px;
+    color: rgb(116, 78, 132);
+}
+.form-item p {
+    font-family: cursive;
+    font-size: 18px;
+    color: rgb(40, 9, 19);
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h2 {
+    font-family: cursive;
+    font-size: 30px;
+    color: rgb(116, 78, 132);
+    margin-bottom: 20px;
+    margin: 30px 0 25px 0;
+}
+.line {
+    width: 200px;
+    height: 7px;
+    background-color: rgb(116, 78, 132);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.contact img {
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 10px;
+    border: 2px solid rgb(32, 5, 32);
+    margin: 30px;
+}
+.form-con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-con table tr td  {                  /*control the space bettwen the td */
+   padding: 20px 20px 0 0 ;
+}
+.form-con table label{
+   font-size: 24px;
+   color: rgb(68, 20, 90);
+   font-family: cursive;
+}
+.form-con table input {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(141, 119, 159);
+    border-radius: 10px;
+}
+.form-con table textarea {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(141, 119, 159);
+    border-radius: 10px;
+}
+.form-con table button {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(116, 78, 132);
+    color: white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 20px;
+}
+.form-con table button:hover {
+    background-color: rgb(85, 52, 99);
+}
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(73, 30, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    font-style: italic;
+}
+
+@media screen and (max-width: 568px) {        /* Media query for mobile devices  */
+    header {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        top: 0;
+        border-radius: 0;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    header h2 {
+        position: relative;
+        left: 10px;
+    }
+    nav ul  {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .but a {
+        position: relative;
+        right: 10px;
+    }
+    .accu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+    }
+    .photo img {
+        margin-left: 0;
+        border-radius: 10px;
+    }
+    .sent {
+        width: 90%;
+        left: 0;
+        padding-top: 20px;
+    }
+    .sent p {
+         border: 4px solid rgb(85, 52, 99);
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    }
+    .about-content {
+        height: 80%;
+    }
+    #about-text {
+        font-size: 18px;
+        line-height: 20px;
+        color: salmon;
+        width: 150%;
+        position: absolute;
+        right: -50px;
+    }
+    .contact img {
+        height: 350px;
+    }
+    footer p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
