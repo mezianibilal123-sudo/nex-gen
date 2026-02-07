@@ -1,2 +1,1 @@
-# nex-gen
-for learning 
+
